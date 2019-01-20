@@ -1,0 +1,22 @@
+{
+  "name": "todoapi",
+  "version": "1.0.0",
+  "description": "todo list one page app",
+  "main": "app.js",
+  "scripts": {
+    "test": "start"
+  },
+  "keywords": [
+    "node",
+    "todo",
+    "app",
+    "onepage"
+  ],
+  "author": "MJP",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.5"
+  }
+}
