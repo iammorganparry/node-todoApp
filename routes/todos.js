@@ -50,6 +50,8 @@ router.put('/:id',(req,res) => {
     })
 });
 
+
+//Delete route 
 router.delete('/:id', (req,res) => {
     db.Todo.deleteOne({_id: req.params.id})
     .then((todo) => {
@@ -59,6 +61,5 @@ router.delete('/:id', (req,res) => {
         res.send(err);
     })
 });
-//Delete route 
 
 module.exports = router;
