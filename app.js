@@ -10,12 +10,15 @@ app.use(bodyParser.json());
 //Rooutes
 
 let todoRoutes = require('./routes/todos');
+let campaignRoute = require('./routes/campaigns');
 //Index route
 app.get('/',(req,res) => {
      res.send('Home Page!');
 });
 //User todo routes after api/todos
 app.use('/api/todos',todoRoutes);
+//Use bq routes
+app.use('/api/campaigns',campaignRoute);
 
 
 
